@@ -1,0 +1,20 @@
+{
+  "name": "kattsoftware/php-telephonify",
+  "description": "Create IVR/phone robots/automated telephone applications/call-centers easy",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "KattSoftware\\Telephonify\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=5.6"
+  },
+  "suggest": {
+    "ext-json": "REQUIRED if you are using Nexmo",
+    "ext-dom": "REQUIRED if you are using Twilio",
+    "nexmo/client": "^1.9 || ^2.0 (REQUIRED if you plan to create outgoing or change ongoing calls - see docs)",
+    "twilio/sdk": "^5.42 || ^6.1 (REQUIRED if you plan to create outgoing or change ongoing calls - see docs)"
+  }
+}
